@@ -27,7 +27,7 @@ def union_name():
    for i in range(1, len(contacts_list)):
       for j in range(1, len(contacts_list)):
          if contacts_list[i][:2] == contacts_list[j][:2]:
-            for k in range(len(contacts_list[i])):
+            for k in range(len(contacts_list[0])):
                if contacts_list[i][k] == '': 
                   contacts_list[i][k] = contacts_list[j][k]
                
