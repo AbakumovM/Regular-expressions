@@ -33,9 +33,11 @@ def union_name():
                
    
    for d in contacts_list:
-      if d not in new_list:
+      if len(d) == len(contacts_list[0]) and d not in new_list:
          new_list.append(d)
-   return      
+   return        
+         
+         
 
 
                 
@@ -46,8 +48,7 @@ if __name__ == '__main__':
    formatting_name()
    formatting_number()
    union_name()
-   # print(new_list)
-
-   with open("phonebook.csv", "w", encoding='utf-8') as f:
-      datawriter = csv.writer(f, delimiter=',')
-      datawriter.writerows(new_list)
+   pprint(new_list)
+   # with open("phonebook.csv", "w", encoding='utf-8') as f:
+   #    datawriter = csv.writer(f, delimiter=',')
+   #    datawriter.writerows(new_list)
