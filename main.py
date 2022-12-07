@@ -49,6 +49,6 @@ if __name__ == '__main__':
    formatting_number()
    union_name()
    pprint(new_list)
-   # with open("phonebook.csv", "w", encoding='utf-8') as f:
-   #    datawriter = csv.writer(f, delimiter=',')
-   #    datawriter.writerows(new_list)
+   with open("phonebook.csv", "w", encoding='utf-8') as f:
+      datawriter = csv.writer(f, delimiter=',')
+      datawriter.writerows(new_list)
